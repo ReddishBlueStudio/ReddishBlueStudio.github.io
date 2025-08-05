@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--Written and created by Wang Tian'en Yuon, fixed and cleaned with the assistance of ChatGPT-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japanese Street Racing</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="SRmain.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Japanese Street Racing</h1>
+    <nav id="controlPanel">
+      <button id="btnWangan">Wangan Racing</button>
+      <button id="btnTouge">Touge Racing</button>
+      <button id="btnGame">Play Mini-Game</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="introSection">
+      <img id="sectionImage" src="images/wangan.jpg" alt="Section Image" />
+      <div class="intro">
+        <h2>Brief Intro</h2>
+        <p>Japanese street racing consists of two popular styles: <strong>Wangan</strong> and <strong>Touge</strong>, each with unique characteristics and car culture roots.</p>
+      </div>
+    </section>
+
+    <section id="wangan" class="contentSection hidden">
+      <h2>Wangan Racing</h2>
+      <p>
+        Wangan Racing refers to racing on long expressways with high-speed stability.<br />
+        It was popular in the 80s and 90s, and gained even more heat from the Mid Night Club.<br />
+        It started when car enthusiasts in the 70s got their hands on supercars from that era.<br />
+        Cars like Toyota 2000GT which is the "first Japanese Supercar", they decided to race<br />
+        in non-policed routes like Wangan Highway or the Shuto Expressway.<br />
+        In the 90s, a group emerged called the Mid Night Club, they were racers in tuners and supercars.<br />
+        They announced races through cryptic texts, but after an accident in 1999, they only do track events.<br />
+      </p>
+      <p>Popular cars: RUF Yellowbird, Lamborghini Countach, Ferrari Testarossa, Toyota Supra, Nissan GT-R, Mazda RX-7</p>
+    </section>
+
+    <section id="touge" class="contentSection hidden">
+      <h2>Touge</h2>
+      <p>
+        Touge refers to mountain pass racing focused on handling and cornering skill.<br />
+        It started when minimum wage workers of Japan in the 60s wanted to "test"<br />
+        their regular cars on mountain passes. Back then, most cars were budget family cars,<br />
+        like station wagons and such. In the 90s, these cars evolved to more high performance Japanese vehicles,<br />
+        for example, the Toyota Supra, Honda NSX.<br />
+        Also in the 90s, Initial D was invented and the anime gave newfound popularity to Touge Racing.<br />
+      </p>
+      <p>Popular cars: AE86, RX7, Honda NSX, Toyota Supra</p>
+    </section>
+
+    <section id="gameSection" class="contentSection hidden">
+      <h2>Mini-Game: Road Fighter Remake</h2>
+      <canvas id="gameCanvas" width="320" height="480"></canvas>
+
+      <div class="controls">
+        <button id="leftBtn">◀</button>
+        <button id="rightBtn">▶</button>
+      </div>
+
+      <p>Use arrow keys or tap buttons to move. Avoid red cars!</p>
+    </section>
+  </main>
+
+  <footer>
+    LabGroup: 01 | Name: Teh Nicholas Sky | AdminNo: 250666B
+    <br />
+    <span class="desktop-only">Scan to play on mobile:</span>
+    <img src="images/qrcode.png" alt="QR Code" class="desktop-only" />
+  </footer>
+</body>
+</html>
