@@ -1,0 +1,119 @@
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout */
+
+body {
+  background: linear-gradient(to bottom, #111, #333);
+  color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #ffcc00;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+#controlPanel button {
+  background-color: #444;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#controlPanel button:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+/* Sections */
+.contentSection, .intro {
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px dashed #888;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+}
+
+#sectionImage {
+  width: 100%;
+  max-width: 500px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 3px solid #888;
+}
+
+/* Game Canvas */
+#gameCanvas {
+  background: #222;
+  display: block;
+  margin: 10px auto;
+  border: 4px solid #fff;
+}
+
+/* Controls buttons */
+.controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.controls button {
+  font-size: 2rem;
+  padding: 10px 25px;
+  background: #333;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.controls button:active {
+  background: #666;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  color: #ffcc00;
+  font-size: 0.9em;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+/* QR Code Visibility */
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .desktop-only {
+    display: none;
+  }
+
+  #controlPanel {
+    flex-direction: column;
+  }
+
+  #controlPanel button {
+    width: 80%;
+  }
+}
